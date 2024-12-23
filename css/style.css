@@ -9,6 +9,7 @@ html {
     --color-red: #b21b21;
     --color-white: #fff;
     --color-black: #000;
+    --color-shadow: #e7e9eb;
 }
 
 /* BODY */
@@ -41,17 +42,19 @@ h1 {
     justify-content: space-between;
     align-items: center;
     gap: 10px;
+    flex-wrap: wrap;
 }
 
 a {
-    flex-basis: 10%;
+    flex-basis: calc(10% - 10px);
     background-color: var(--color-white);
     /* aspect-ratio: 1; */
-    border-radius: 50%;
+    border-radius: 30px;
     text-align: center;
     font-size: 2rem;
     color: var(--color-black);
     padding: 1rem 1rem;
+    box-shadow: -5px 5px var(--color-shadow);
 }
 
 /* ASIDE */
