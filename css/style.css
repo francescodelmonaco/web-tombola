@@ -9,7 +9,9 @@ html {
     --color-red: #b21b21;
     --color-white: #fff;
     --color-black: #000;
-    --color-shadow: #e7e9eb;
+    --color-shadow: #470b0d;
+    --color-green: #2d4008;
+    --color-yellow: #fde2ac;
 }
 
 /* BODY */
@@ -35,6 +37,7 @@ h1 {
 
 .flex__80-20 .flex__number {
     flex-basis: 80%;
+    padding: 0.5rem;
 }
 
 .flex__number {
@@ -57,8 +60,52 @@ a {
     box-shadow: -5px 5px var(--color-shadow);
 }
 
+a:hover {
+    cursor: pointer;
+    background-color: var(--color-shadow);
+    box-shadow: -5px 5px var(--color-white);
+    color: var(--color-white);
+}
+
 /* ASIDE */
 
 .flex__80-20 aside {
     flex-basis: 20%;
+    padding: 0.5rem;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.last-number {
+    font-size: 3rem;
+    background-color: var(--color-white);
+    padding: 1rem;
+    border-radius: 30px;
+    box-shadow: -5px 5px var(--color-shadow);
+}
+
+hr {
+    width: 90%;
+    color: var(--color-white);
+}
+
+.btn__yellow {
+    background-color: var(--color-yellow);
+    color: var(--color-green);
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 0px;
+}
+
+.btn__green {
+    background-color: var(--color-green);
+    color: var(--color-yellow);
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 0px;
 }
