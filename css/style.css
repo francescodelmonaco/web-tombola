@@ -48,19 +48,18 @@ h1 {
     flex-wrap: wrap;
 }
 
-a {
+.flex__number a {
     flex-basis: calc(10% - 10px);
     background-color: var(--color-white);
-    /* aspect-ratio: 1; */
-    border-radius: 30px;
+    border-radius: 20px;
     text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
     color: var(--color-black);
     padding: 1rem 1rem;
     box-shadow: -5px 5px var(--color-shadow);
 }
 
-a:hover {
+.flex__number a:hover {
     cursor: pointer;
     background-color: var(--color-shadow);
     box-shadow: -5px 5px var(--color-white);
@@ -81,11 +80,15 @@ aside {
     gap: 0.7rem;
 }
 
+aside span strong {
+    color: var(--color-white);
+}
+
 .last-number {
     font-size: 3rem;
     background-color: var(--color-white);
     padding: 1rem;
-    border-radius: 30px;
+    border-radius: 20px;
     box-shadow: -5px 5px var(--color-shadow);
 }
 
@@ -100,6 +103,7 @@ hr {
     padding: 1rem;
     border-radius: 1rem;
     border: 0px;
+    box-shadow: -5px 5px var(--color-shadow);
 }
 
 .btn__green {
@@ -108,4 +112,5 @@ hr {
     padding: 1rem;
     border-radius: 1rem;
     border: 0px;
+    box-shadow: -5px 5px var(--color-shadow);
 }
